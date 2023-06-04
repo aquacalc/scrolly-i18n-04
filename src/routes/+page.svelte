@@ -8,3 +8,7 @@
 
 <p>{@html i('one-p1')}</p>
 <p>{@html i('one-p2')}</p>
+
+<p>{language}</p>
+
+<hr />
