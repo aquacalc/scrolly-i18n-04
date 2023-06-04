@@ -1,9 +1,12 @@
 <script>
 	// see: https://www.youtube.com/watch?v=Y6IbPfMU1xM
-	import { i, languages, language, switchLanguage } from '@inlang/sdk-js';
+	import { i, languages, language, switchLanguage, referenceLanguage } from '@inlang/sdk-js';
+
+console.log(`referenceLanguage: `, referenceLanguage)
 
 	// Make this assignment to show correct select selection on refresh
-	let selectedLang = language;
+	let selectedLang = 'de';
+	// let selectedLang = language;
 
 	const handleLanguageSelection = async (e) => {
 		// console.log(`1. language = ${language} (vs. ${e.target.value})`)
@@ -60,6 +63,10 @@
 <p>Here: {i('one-p2')} :erehT</p>
 
 <p>{language}</p>
+
+{#each languages as lang}
+  <p>{lang}</p>
+{/each}
 
 {@html i('block')}
 

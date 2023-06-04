@@ -13,8 +13,8 @@ export async function defineConfig(env) {
 		referenceLanguage: 'en',
 		plugins: [
 			jsonPlugin({
-				pathPattern: './languages/{language}.json',
-				variableReferencePattern: ["{{", "}}"]
+				pathPattern: './languages/{language}.json'
+				// variableReferencePattern: ['{{', '}}']
 			}),
 			sdkPlugin({
 				languageNegotiation: {
