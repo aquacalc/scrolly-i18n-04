@@ -6,7 +6,7 @@
 
 <h1>Test inlang JSON plugin</h1>
 
-<p>{@html i('one-p1')}</p>
+<p>Here: {@html i('one-p1')} :erehT</p>
 <p>{@html i('one-p2')}</p>
 
 <p>{language}</p>
