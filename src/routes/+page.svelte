@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	// see: https://www.youtube.com/watch?v=Y6IbPfMU1xM
+	import { i, languages, language, switchLanguage } from '@inlang/sdk-js';
+
+</script>
+
+<h1>Test inlang JSON plugin</h1>
+
+<p>{@html i('one-p1')}</p>
+<p>{@html i('one-p2')}</p>
